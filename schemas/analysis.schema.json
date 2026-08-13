@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Wizc1998/contact-center-ai-analytics/schemas/analysis.schema.json",
+  "title": "Contact center analysis",
+  "type": "object",
+  "required": ["topic", "sentiment", "urgency", "resolved", "escalation_risk", "confidence"],
+  "properties": {
+    "topic": {"type": "string"},
+    "sentiment": {"enum": ["positive", "neutral", "negative"]},
+    "urgency": {"enum": ["normal", "high"]},
+    "resolved": {"type": "boolean"},
+    "escalation_risk": {"type": "boolean"},
+    "drivers": {"type": "array", "items": {"type": "string"}, "maxItems": 3},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "analyzer_version": {"type": "string"},
+    "policy_flags": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contact-center-ai-analytics"
+version = "1.0.0"
+description = "Privacy-first, evaluation-driven contact center conversation analytics."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Chase Cai" }]
+keywords = ["contact-center", "llm", "voice-analytics", "pii", "evaluation"]
+
+[project.optional-dependencies]
+dashboard = ["pandas>=2.0", "plotly>=5.0", "streamlit>=1.30"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+contact-center-ai = "contact_center_ai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+

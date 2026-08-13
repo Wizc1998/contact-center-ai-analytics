@@ -1,0 +1,15 @@
+{"text":"My autopay payment did not post and the due date is tomorrow.","expected_topic":"payment"}
+{"text":"I paid yesterday but the payment still shows pending. Please check autopay.","expected_topic":"payment"}
+{"text":"My statement has the wrong charge and the billed amount is incorrect.","expected_topic":"billing"}
+{"text":"I was charged twice and the balance on this bill is wrong.","expected_topic":"billing"}
+{"text":"I cannot log in because my password reset code never arrived.","expected_topic":"account_access"}
+{"text":"I am locked out of the login page and need a verification code.","expected_topic":"account_access"}
+{"text":"This transaction is unauthorized and not mine. I suspect fraud.","expected_topic":"fraud"}
+{"text":"My identity was stolen and there is a fraudulent account that is not mine.","expected_topic":"fraud"}
+{"text":"The DMV still has not received my title or lien release.","expected_topic":"vehicle_title"}
+{"text":"I need the vehicle title so I can finish registration with the DMV.","expected_topic":"vehicle_title"}
+{"text":"The dealership delayed delivery and the dealer will not return my calls.","expected_topic":"dealer_experience"}
+{"text":"My salesperson at the dealer promised equipment the dealership never installed.","expected_topic":"dealer_experience"}
+{"text":"I want to cancel and close my account immediately.","expected_topic":"cancellation"}
+{"text":"Please terminate this agreement; I need to return the vehicle and cancel.","expected_topic":"cancellation"}
+
